@@ -1,3 +1,7 @@
+[![Version](https://img.shields.io/cocoapods/v/MintegralAdSDK.svg?style=flat)](http://cocoapods.org/pods/MintegralAdSDK)
+[![License](https://img.shields.io/cocoapods/l/MintegralAdSDK.svg?style=flat)](http://cocoapods.org/pods/MintegralAdSDK)
+[![Platform](https://img.shields.io/cocoapods/p/MintegralAdSDK.svg?style=flat)](http://cocoapods.org/pods/MintegralAdSDK)
+
 # Mintegral SDKs for iOS
 
 More information can be found at the [Wiki page.](https://dev.mintegral.com/doc/index.html?file=sdk-m_sdk-ios)
