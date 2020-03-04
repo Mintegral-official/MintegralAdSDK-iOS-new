@@ -1,6 +1,6 @@
 [![Version](https://img.shields.io/cocoapods/v/MintegralAdSDK.svg?style=flat)](http://cocoapods.org/pods/MintegralAdSDK)
 [![License](https://img.shields.io/cocoapods/l/MintegralAdSDK.svg?style=flat)](http://cocoapods.org/pods/MintegralAdSDK)
-[![Platform](https://img.shields.io/cocoapods/p/MintegralAdSDK.svg?style=flat)](http://cocoapods.org/pods/MintegralAdSDK)
+
 
 # Mintegral SDKs for iOS
 
@@ -61,6 +61,12 @@ CocoaPods is used to install and manage dependencies in existing Xcode projects.
     
     #Note: using Bid BannerAd Framework
     pod 'MintegralAdSDK/BidBannerAd'
+    
+    #Note: using SplashAd Framework
+    pod 'MintegralAdSDK/SplashAd'
+    
+    #Note: using Bid SplashAd Framework
+    pod 'MintegralAdSDK/BidSplashAd'
     
     ```
 
