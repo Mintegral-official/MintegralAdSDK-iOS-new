@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, '8.0'
 
 
-  spec.source = { :http => 'https://github.com/Mintegral-official/MintegralAdSDK-iOS-new/releases/download/master/Mintegral_M_SDK_601.zip' }
+  spec.source = { :http => 'https://github.com/Mintegral-official/MintegralAdSDK-iOS-new/releases/download/6.0.1/Mintegral_M_SDK_601.zip' }
 
   #spec.source       = { :git => 'https://github.com/Mintegral-official/MintegralAdSDK-iOS.git', :tag => sdkVersion}
 
