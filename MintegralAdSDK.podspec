@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = 'MintegralAdSDK'
-  sdkVersion        = '6.0.1'
+  sdkVersion        = '6.1.0'
   spec.version      = sdkVersion + '.0'
   spec.summary      = 'Mintegral Network Mobile App Ad SDK'
   spec.homepage     = 'http://cdn-adn.rayjump.com/cdn-adn/v2/markdown_v2/index.html?file=sdk-m_sdk-ios&lang=en'
@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, '8.0'
 
 
-  spec.source = { :http => 'https://github.com/Mintegral-official/MintegralAdSDK-iOS-new/releases/download/6.0.1/Mintegral_M_SDK_601.zip' }
+  spec.source = { :http => 'https://github.com/Mintegral-official/MintegralAdSDK-iOS-new/releases/download/6.1.0/Mintegral_M_SDK_610.zip' }
 
   #spec.source       = { :git => 'https://github.com/Mintegral-official/MintegralAdSDK-iOS.git', :tag => sdkVersion}
 
