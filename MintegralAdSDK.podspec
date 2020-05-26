@@ -119,6 +119,19 @@ spec.subspec 'BidSplashAd' do |ss|
   ss.dependency 'MintegralAdSDK/BidNativeAd'
 end
 
+spec.subspec 'NativeAdvancedAd' do |ss|
+  ss.ios.deployment_target = '8.0'
+  ss.preserve_paths = "Fmk/*.framework"
+  ss.vendored_frameworks = 'Fmk/MTGSDKNativeAdvanced.framework'
+  ss.dependency 'MintegralAdSDK/NativeAd'
+end
+
+spec.subspec 'BidNativeAdvancedAd' do |ss|
+  ss.ios.deployment_target = '8.0'
+  ss.vendored_frameworks = 'Fmk/MTGSDKNativeAdvanced.framework'
+  ss.dependency 'MintegralAdSDK/BidNativeAd'
+end
+
 
  
 end
