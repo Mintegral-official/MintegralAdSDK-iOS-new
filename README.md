@@ -68,6 +68,12 @@ CocoaPods is used to install and manage dependencies in existing Xcode projects.
     #Note: using Bid SplashAd Framework
     pod 'MintegralAdSDK/BidSplashAd'
     
+    #Note: using NativeAdvancedAd Framework
+    pod 'MintegralAdSDK/NativeAdvancedAd'
+    
+    #Note: using Bid NativeAdvancedAd Framework
+    pod 'MintegralAdSDK/BidNativeAdvancedAd'
+    
     ```
 
 4. Save the file.
