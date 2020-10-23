@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => 'Mintegral', :file => "Fmk/LICENSE.txt" }
   spec.author             = 'Mintegral'
   spec.social_media_url   = 'https://www.facebook.com/mintegral.official'
-  spec.platform     = :ios, '8.0'
+  spec.platform     = :ios, '9.0'
 
 
   spec.source = { :http => "https://github.com/Mintegral-official/MintegralAdSDK-iOS-new/releases/download/#{spec.version}/Mintegral_M_SDK.zip" }
