@@ -77,6 +77,7 @@ CocoaPods is used to install and manage dependencies in existing Xcode projects.
     ```
 
 4. Save the file.
+
 5. Open a terminal and `cd` to the directory containing the Podfile.
 
     ```
