@@ -26,7 +26,6 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.user_target_xcconfig =   {'OTHER_LDFLAGS' => ['-lObjC']}
 
-  #spec.preserve_paths = "Mintegral_M_SDK_585/*.framework"
 
   spec.ios.deployment_target = '9.0'
 
@@ -34,7 +33,7 @@ Pod::Spec.new do |spec|
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.default_subspecs =  'NativeAd'
+  spec.default_subspecs = 'RewardVideoAd','BidRewardVideoAd','InterstitialVideoAd','BidInterstitialVideoAd','BannerAd','BidBannerAd','NativeAd','BidNativeAd'
 
   spec.subspec 'NativeAd' do |ss|
   ss.ios.deployment_target = '9.0'
