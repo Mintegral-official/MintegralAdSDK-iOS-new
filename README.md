@@ -29,14 +29,14 @@ CocoaPods is used to install and manage dependencies in existing Xcode projects.
     ```
     platform :ios, '9.0'
     
-    # default is using NativeAd, BannerAd, RewardVideoAd, InterstitialVideoAd
+    # default is using Native, Banner, RewardVideo, InterstitialVideo ad formats, including bidding.
     pod 'MintegralAdSDK'
     
     # or for all ad formats, please use:
     #pod 'MintegralAdSDK/All'  
     
     # for single ad format, see below:
-    #pod 'MintegralAdSDK/BidNativeAd'  
+    pod 'MintegralAdSDK/BidNativeAd'  
     pod 'MintegralAdSDK/RewardVideoAd'
     pod 'MintegralAdSDK/BidRewardVideoAd'
     pod 'MintegralAdSDK/InterstitialVideoAd'
