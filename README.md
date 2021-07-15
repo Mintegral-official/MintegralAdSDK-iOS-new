@@ -27,51 +27,27 @@ CocoaPods is used to install and manage dependencies in existing Xcode projects.
 3. Open `Podfile`, and add your dependencies. A simple Podspec is shown here:
 
     ```
-    platform :ios, '8.0'
+    platform :ios, '9.0'
     
-    #Note: default is using NativeAd Framework
-    #pod 'MintegralAdSDK'  
-    #Note: or 
-    #pod 'MintegralAdSDK/NativeAd'  
+    # default is using NativeAd, BannerAd, RewardVideoAd, InterstitialVideoAd
+    pod 'MintegralAdSDK'
     
-    #Note: using Bid NativeAd Framework
+    # or for all ad formats, please use:
+    #pod 'MintegralAdSDK/All'  
+    
+    # for single ad format, see below:
     #pod 'MintegralAdSDK/BidNativeAd'  
-    
-    
-    #Note: using RewardVideoAd Framework
     pod 'MintegralAdSDK/RewardVideoAd'
-    
-    #Note: using Bid RewardVideoAd Framework
     pod 'MintegralAdSDK/BidRewardVideoAd'
-    
-    #Note: using InterstitialVideoAd Framework
     pod 'MintegralAdSDK/InterstitialVideoAd'
-    
-    #Note: using Bid InterstitialVideoAd Framework
     pod 'MintegralAdSDK/BidInterstitialVideoAd'
-    
-    #Note: using InterstitialAd Framework
     pod 'MintegralAdSDK/InterstitialAd'
-    
-    #Note: using InterActiveAd Framework
     pod 'MintegralAdSDK/InterActiveAd'
-
-    #Note: using BannerAd Framework
     pod 'MintegralAdSDK/BannerAd'
-    
-    #Note: using Bid BannerAd Framework
     pod 'MintegralAdSDK/BidBannerAd'
-    
-    #Note: using SplashAd Framework
     pod 'MintegralAdSDK/SplashAd'
-    
-    #Note: using Bid SplashAd Framework
     pod 'MintegralAdSDK/BidSplashAd'
-    
-    #Note: using NativeAdvancedAd Framework
     pod 'MintegralAdSDK/NativeAdvancedAd'
-    
-    #Note: using Bid NativeAdvancedAd Framework
     pod 'MintegralAdSDK/BidNativeAdvancedAd'
     
     ```
