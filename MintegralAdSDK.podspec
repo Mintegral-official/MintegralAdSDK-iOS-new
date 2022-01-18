@@ -34,7 +34,7 @@ Pod::Spec.new do |spec|
 
   
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.default_subspecs = 'RewardVideoAd','BidRewardVideoAd','InterstitialVideoAd','BidInterstitialVideoAd','BannerAd','BidBannerAd','NativeAd','BidNativeAd'
+  spec.default_subspecs = 'RewardVideoAd','BidRewardVideoAd', 'NewInterstitialAd', 'BidNewInterstitialAd', 'InterstitialVideoAd','BidInterstitialVideoAd','BannerAd','BidBannerAd','NativeAd','BidNativeAd'
 
   spec.subspec 'NativeAd' do |ss|
     ss.ios.deployment_target = '9.0'
@@ -47,6 +47,21 @@ Pod::Spec.new do |spec|
     ss.preserve_paths = "Fmk/*.xcframework"
     ss.vendored_frameworks = 'Fmk/MTGSDKBidding.xcframework'
     ss.dependency 'MintegralAdSDK/NativeAd'
+  end
+
+  spec.subspec 'NewInterstitialAd' do |ss|
+    ss.ios.deployment_target = '9.0'
+    ss.preserve_paths = "Fmk/*.xcframework"
+    ss.vendored_frameworks = 'Fmk/MTGSDKNewInterstitial.xcframework'
+    ss.dependency 'MintegralAdSDK/NativeAd'
+    ss.dependency 'MintegralAdSDK/InterstitialVideoAd'
+  end
+  
+  spec.subspec 'BidNewInterstitialAd' do |ss|
+    ss.ios.deployment_target = '9.0'
+    ss.preserve_paths = "Fmk/*.xcframework"
+    ss.dependency 'MintegralAdSDK/NewInterstitialAd'
+    ss.dependency 'MintegralAdSDK/BidNativeAd'
   end
    
   spec.subspec 'InterstitialVideoAd' do |ss|
@@ -86,13 +101,7 @@ Pod::Spec.new do |spec|
     ss.dependency 'MintegralAdSDK/NativeAd'
   end
   
-  
-  spec.subspec 'InterActiveAd' do |ss|
-    ss.ios.deployment_target = '9.0'
-    ss.preserve_paths = "Fmk/*.xcframework"
-    ss.vendored_frameworks = 'Fmk/MTGSDKInterActive.xcframework'
-    ss.dependency 'MintegralAdSDK/NativeAd'
-  end
+
   
   
   spec.subspec 'BannerAd' do |ss|
@@ -139,9 +148,9 @@ Pod::Spec.new do |spec|
     ss.dependency 'MintegralAdSDK/NativeAd'
     ss.dependency 'MintegralAdSDK/BidNativeAd'
     ss.dependency 'MintegralAdSDK/RewardVideoAd'
+    ss.dependency 'MintegralAdSDK/NewInterstitialAd'
     ss.dependency 'MintegralAdSDK/InterstitialVideoAd'
     ss.dependency 'MintegralAdSDK/InterstitialAd'
-    ss.dependency 'MintegralAdSDK/InterActiveAd'
     ss.dependency 'MintegralAdSDK/BannerAd'
     ss.dependency 'MintegralAdSDK/SplashAd'
     ss.dependency 'MintegralAdSDK/NativeAdvancedAd'
