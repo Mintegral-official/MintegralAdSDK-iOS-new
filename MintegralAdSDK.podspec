@@ -142,6 +142,13 @@ Pod::Spec.new do |spec|
     ss.dependency 'MintegralAdSDK/BidNativeAd'
     ss.dependency 'MintegralAdSDK/NativeAdvancedAd'
   end
+
+  spec.subspec 'CNAddition' do |ss|
+    ss.ios.deployment_target = '9.0'
+    ss.preserve_paths = "Fmk/*.xcframework"
+    ss.vendored_frameworks = 'Fmk/MTGSDKCNAddition.xcframework'
+    ss.dependency 'MintegralAdSDK/NativeAd'
+  end
   
   spec.subspec 'All' do |ss|
     ss.ios.deployment_target = '9.0'
