@@ -25,10 +25,8 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
 
-  spec.xcconfig =
-  {
-    'OTHER_LDFLAGS' => '-ObjC'
-  }
+  spec.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC'}
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
 
   spec.ios.deployment_target = '9.0'
 
