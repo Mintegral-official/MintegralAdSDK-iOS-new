@@ -90,18 +90,7 @@ Pod::Spec.new do |spec|
     ss.dependency 'MintegralAdSDK/BidNativeAd'
     ss.dependency 'MintegralAdSDK/RewardVideoAd'
   end
-  
-  
-  spec.subspec 'InterstitialAd' do |ss|
-    ss.ios.deployment_target = '9.0'
-    ss.preserve_paths = "Fmk/*.xcframework"
-    ss.vendored_frameworks = 'Fmk/MTGSDKInterstitial.xcframework'
-    ss.dependency 'MintegralAdSDK/NativeAd'
-  end
-  
 
-  
-  
   spec.subspec 'BannerAd' do |ss|
     ss.ios.deployment_target = '9.0'
     ss.preserve_paths = "Fmk/*.xcframework"
@@ -155,7 +144,6 @@ Pod::Spec.new do |spec|
     ss.dependency 'MintegralAdSDK/RewardVideoAd'
     ss.dependency 'MintegralAdSDK/NewInterstitialAd'
     ss.dependency 'MintegralAdSDK/InterstitialVideoAd'
-    ss.dependency 'MintegralAdSDK/InterstitialAd'
     ss.dependency 'MintegralAdSDK/BannerAd'
     ss.dependency 'MintegralAdSDK/SplashAd'
     ss.dependency 'MintegralAdSDK/NativeAdvancedAd'
