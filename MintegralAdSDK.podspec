@@ -122,7 +122,6 @@ Pod::Spec.new do |spec|
 
   
   spec.subspec 'All' do |ss|
-    ss.ios.deployment_target = '9.0'
     ss.dependency 'MintegralAdSDK/NativeAd'
     ss.dependency 'MintegralAdSDK/BidNativeAd'
     ss.dependency 'MintegralAdSDK/RewardVideoAd'
