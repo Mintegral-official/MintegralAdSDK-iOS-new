@@ -41,7 +41,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'NativeAd' do |ss|
     ss.preserve_paths = "Fmk/*.xcframework"
     ss.vendored_frameworks = 'Fmk/MTGSDK.xcframework'
-    ss.resource_bundles = {'MTGSDK' => ['Fmk/MTGSDK.xcframework/ios-arm64/MTGSDK.framework/PrivacyInfo.xcprivacy']}
+    ss.resource_bundles = { 'MTGResources' => ['Fmk/MTGResources.bundle/*'] }
   end
   
   spec.subspec 'BidNativeAd' do |ss|
